@@ -1,9 +1,19 @@
 # JobPortal
 
 This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.18.
+## Development 
+### /src/app/
+It contains all the components, pipes, services and router files used.
+
+####/src/app/pipes
+This file is to create a customized pipe for date format.
+
+####/src/app/services
+Here I have used Rxjx to include observables service DI. 
+As for mock data, I mocked up a weburl with the json provided, here - http://www.mocky.io/v2/581dc2390f0000e91f02dadd.
 
 ## Development server
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+change to root folder and user `ng serve`command to build and on a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## Code scaffolding
 
