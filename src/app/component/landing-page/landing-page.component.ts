@@ -20,15 +20,10 @@ export class LandingPageComponent implements OnInit {
   endDate:string;
    constructor(private appService : AppService){
       let component = this;
-    
         this.appService.getJobDetails().subscribe(res => {
              component.jobDetails =  res;
              component.length = component.jobDetails.shifts.length-1;
-             component.jobDetails = JSON.parse(JSON.stringify(component.jobDetails)); 
-             component.company= JSON.parse(JSON.stringify(component.jobDetails.company));
-             component.startDate = component.jobDetails.shifts[0].startDate; 
-             component.endDate = component.jobDetails.shifts[component.length].endDate; 
-             console.log("startDate:"+component.startDate+"endDate:"+component.endDate);
+             component.jobDetails = JSON.parse(JSON.stringify(component.jobDetails));            
          });
     }
 
